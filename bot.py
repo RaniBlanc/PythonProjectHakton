@@ -25,13 +25,13 @@ class ChatBot:
 
     def get_response(self, user_input):
         if user_input.strip() in ["שלום", "היי", "hi", "hello"]:
-            return "היי 💙 אני כאן בשבילך. איך אתה מרגיש היום?"
+            return "היי  אני כאן בשבילך. איך אתה מרגיש היום?"
 
         self.messages.append({"role": "user", "content": user_input})
 
         try:
             response = ollama.chat(
-                model="mistral",
+                model="llama3",
                 messages=self.messages
             )
 
