@@ -15,6 +15,7 @@ class ChatBot:
 - אל תדבר בשפה גבוהה
 - אל תשאל יותר מדי שאלות יחד
 - תן תחושה שמקשיבים למשתמש
+- אל תשתמש באימוג'ים
 
 דוגמה טובה:
 "אני מבין אותך… זה נשמע לא פשוט. רוצה לספר לי מה קרה?"
@@ -31,7 +32,7 @@ class ChatBot:
 
         try:
             response = ollama.chat(
-                model="llama3",
+                model="gemma4",
                 messages=self.messages
             )
 
